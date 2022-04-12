@@ -8,7 +8,6 @@
         font-family: sans-serif;
       }
 
-
       .background {
         background-color: #555555;
         margin: 10px;
@@ -21,13 +20,33 @@
         background-color: #cccccc;
         margin: 6px;
         margin-inline-end: 0;
+        height: 118px;
 
       }
 
       .top {
         width: 192px;
         height: 118px;
+      }
 
+      .middle {
+        width: 142.5px;
+      }
+
+      .short {
+        height: 118px;
+      }
+
+      .tall {
+        height: 100px;
+      }
+
+      .bottom {
+        width: 291px;
+      }
+
+      #bottom-left {
+        height: 35px;
       }
 
     </style>
@@ -38,19 +57,18 @@
     <h1>AAAAAHHHHHH</h1>
 
     <div class="background">
-      <div class="inline top"></div><div class="inline top"></div><div class="inline top"></div>
+      <div class="inline top"></div><div class="inline top">
+      </div><div class="inline top"></div>
     </div>
 
     <div class="background">
-      <div class="inline"></div>
-      <div class="inline"></div>
-      <div class="inline"></div>
-      <div class="inline"></div>
+      <div class="inline middle short"></div><div class="inline middle tall">
+      </div><div class="inline middle short">
+      </div><div class="inline middle tall"></div>
     </div>
 
     <div class="background">
-      <div class="inline"></div>
-      <div class="inline"></div>
+      <div class="inline bottom" id="bottom-left"></div><div class="inline bottom"></div>
     </div>
 
   </body>
