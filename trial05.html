@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .block {
+            width: 350px;
+        }
+
+        .inline {
+            display: inline-block;
+            background-color: #000000;
+            height: 100px;
+            width: 100px;
+            margin: 50px;
+            margin-inline-end: 0;
+        }
+
+        #top {
+            background-color: #ff0000;
+        }
+
+        #bottom {
+            background-color: blue;
+        }
+
+    </style>
+  </head>
+
+  <body>
+
+      <div class="block" id="top">
+          <div class="inline"></div>
+          <div class="inline"></div>
+
+      </div>
+
+      <div class="block" id="bottom">
+          <div class="inline"></div>
+          <div class="inline"></div>
+      </div>
+
+  </body>
+
+</html>
