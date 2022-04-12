@@ -3,10 +3,48 @@
 
   <head>
     <style>
+
+      body {
+        margin: 0;
+      }
+
+      div {
+        display: inline-block;
+      }
+
+      .outer {
+        width: 350px;
+      }
+
+      .inner {
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        margin: 50px;
+        margin-inline-end: 0;
+      }
+
+      #left {
+        background-color: red;
+      }
+
+      #right {
+        background-color: blue;
+      }
+
+
     </style>
   </head>
 
   <body>
+    <div class="outer" id="left">
+      <div class="inner"></div>
+      <div class="inner"></div>
+    </div><div class="outer" id="right">    
+      <div class="inner"></div>
+      <div class="inner"></div>
+    </div>
+
   </body>
 
 </html>
