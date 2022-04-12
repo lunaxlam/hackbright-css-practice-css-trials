@@ -3,10 +3,50 @@
 
   <head>
     <style>
-    </style>
+
+      body {
+        margin-top: 0;
+      }
+
+      div {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+
+      #outer {
+        background-color: #cccccc;
+        padding: 15px 10px 15px 10px;
+        height: 200px;
+        width: 900px;
+      }
+
+        .inner {
+          display: inline-block;
+          height: 180px;
+          width: 180px;
+          border-width: 10px;
+          
+        }
+
+        .square {
+          border-style: double;
+        }
+
+        #circle {
+          border-style: dotted;
+          border-radius: 50%;
+          margin: 0 150px 0 150px;
+        }
+
+      </style>
   </head>
 
   <body>
+    <div id="outer">
+      <div class="inner square"></div><div class="inner" id="circle"></div><div class="inner square"></div>
+    </div>
   </body>
 
 </html>
+
